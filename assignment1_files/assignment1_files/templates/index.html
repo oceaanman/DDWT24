@@ -9,11 +9,11 @@
     <h1>Movies List</h1>
 
     <!-- Display the list of movies -->
-    <ul>
+    <ol>
         {% for movie in movies %}
             <li>{{ movie.name }}</li>
         {% endfor %}
-    </ul>
+    </ol>
 
     <!-- Link to add a new movie -->
     <a href="{{ url_for('add_movie') }}">Add a New Movie</a>

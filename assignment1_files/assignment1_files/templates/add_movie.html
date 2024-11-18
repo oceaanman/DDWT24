@@ -8,6 +8,21 @@
 <body>
     <h1>Add a New Movie</h1>
     <!-- add form here -->
+    <form action="{{ url_for('add_movie') }}" method="POST">
+        <label for="id">Movie ID (Leave empty to add a new movie):</label>
+        <input type="number" id="id" name="id" value="{{ movie.id if movie else '' }}"><br><br>
+
+        <label for="name">Movie Name:</label>
+        <input type="text" id="name" name="name" value="{{ movie.name if movie else '' }}" required><br><br>
+    
+        <label for="year">Year:</label>
+        <input type="number" id="year" name="year" value="{{ movie.year if movie else '' }}"><br><br>
+    
+        <label for="oscars">Oscars:</label>
+        <input type="number" id="oscars" name="oscars" value="{{ movie.oscars if movie else '' }}"><br><br>
+    
+        <button type="submit">{% if movie %}Update Movie{% else %}Add Movie{% endif %}</button>
+    </form>
 
 
     <a href="{{ url_for('index') }}">Back to Movies List</a>

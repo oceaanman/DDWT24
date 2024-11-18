@@ -37,33 +37,40 @@ def index():
 def add_movie():
     movie = None
 
-    if request.method ==  [...]:
-        movie_id = [...]
+    if request.method ==  'POST':
+        movie_id = request.form.get('id')
         
-        ## Handle updates here:    
+        # If an id is provided, check if the movie exists and update it
         if movie_id:
-            # Fetch the movie by ID if it exists
-            [...]
+            movie = Movie.query.get(movie_id)
             if movie:
-                # get values for existing movie from HTML
-                [...]
-
+                # Update movie fields with the form data
+                movie.name = request.form.get('name')
+                movie.year = request.form.get('year')
+                movie.oscars = request.form.get('oscars')
             else:
                 return "Movie not found.", 404
         else:
             # Add new movie if no ID is provided
+            movie_name = request.form.get('name')
+            movie_year = request.form.get('year')
+            movie_oscars = request.form.get('oscars')
+
             movie = Movie(
-                [...]
+                name=movie_name,
+                year=int(movie_year) if movie_year else None,
+                oscars=int(movie_oscars) if movie_oscars else None
             )
 
         # Add and Commit changes to the database for both update and add
-        [...]
+        db.session.add(movie)
+        db.session.commit()
         return redirect(url_for('index'))
 
     # Check if editing an existing movie via query parameter - pass to add values in add_movie page (optional)
-    [...]
+    movie_id = request.args.get('id')
     if movie_id:
-        [...]
+        movie = Movie.query.get(movie_id)
 
     return render_template('add_movie.html', movie=movie)
 
