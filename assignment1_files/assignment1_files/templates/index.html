@@ -4,16 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Movies</title>
+    <!-- remove bullet points. i want the movie ID to be the bullets of a sort of ordered list -->
+    <style>
+        ul {
+            list-style-type: none; 
+            padding-left: 0; 
+        }
+    </style>
 </head>
 <body>
     <h1>Movies List</h1>
 
     <!-- Display the list of movies -->
-    <ol>
+    <ul>
         {% for movie in movies %}
-            <li>{{ movie.name }}</li>
+            <li>
+                {{ movie.id }} - {{ movie.name }}
+                <!-- Delete button next to each movie -->
+                <form action="{{ url_for('delete_movie', id=movie.id) }}" method="POST" style="display:inline;">
+                    <button type="submit" class="enabled-btn">Delete</button>
+                </form>
+            </li>
         {% endfor %}
-    </ol>
+    </ul>
 
     <!-- Link to add a new movie -->
     <a href="{{ url_for('add_movie') }}">Add a New Movie</a>

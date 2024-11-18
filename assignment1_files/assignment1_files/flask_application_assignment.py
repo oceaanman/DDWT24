@@ -40,7 +40,7 @@ def add_movie():
     if request.method ==  'POST':
         movie_id = request.form.get('id')
         
-        # If an id is provided, check if the movie exists and update it
+        # If id is given check if the movie exists and update it
         if movie_id:
             movie = Movie.query.get(movie_id)
             if movie:
@@ -51,7 +51,7 @@ def add_movie():
             else:
                 return "Movie not found.", 404
         else:
-            # Add new movie if no ID is provided
+            # Add new movie if no ID is given
             movie_name = request.form.get('name')
             movie_year = request.form.get('year')
             movie_oscars = request.form.get('oscars')
@@ -76,16 +76,23 @@ def add_movie():
 
 @app.route('/delete_movie/<int:id>', methods=['POST'])
 def delete_movie(id):
-    # Get the movie by ID
-    [...]    
+    movie = Movie.query.get(id)  # Get the movie by ID
+    
+    if not movie:
+        return render_template('index.html', movies=Movie.query.all(), error="Movie not found.")
     
     try:
-        # Delete the movie from the database
-        [...]
+        db.session.delete(movie)  # Delete the movie
+        db.session.commit()  # Commit the changes
+        return redirect(url_for('index'))  # Redirect back to the movies list
+    except Exception as e:
+        return f"There was a problem deleting that movie. Error: {str(e)}"
 
-        return redirect(url_for('index'))
-    except:
-        return "There was a problem deleting that movie."
+
+
+
+
+
 
 if __name__ == '__main__':
     app.run(debug=False)
