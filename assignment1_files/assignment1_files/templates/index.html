@@ -21,7 +21,7 @@
             <li>
                 {{ movie.id }} - {{ movie.name }}
                 <!-- Delete button next to each movie -->
-                <form action="{{ url_for('delete_movie', id=movie.id) }}" method="POST" style="display:inline;">
+                <form action="{{ url_for('main.delete_movie', id=movie.id) }}" method="POST" style="display:inline;">
                     <button type="submit" class="enabled-btn">Delete</button>
                 </form>
             </li>
@@ -29,6 +29,6 @@
     </ul>
 
     <!-- Link to add a new movie -->
-    <a href="{{ url_for('add_movie') }}">Add a New Movie</a>
+    <a href="{{ url_for('main.add_movie') }}">Add a New Movie</a>
 </body>
 </html>

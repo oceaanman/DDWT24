@@ -9,7 +9,7 @@
 <body>
     <h1>Add or update a Movie</h1>
 
-    <form action="{{ url_for('add_movie') }}" method="POST">
+    <form action="{{ url_for('main.add_movie') }}" method="POST">
         <label for="id">Movie ID (Enter a movie ID to change that movie or leave empty to add a new movie):</label><br>
         <input type="number" id="id" name="id" value="{{ movie.id if movie else '' }}"><br><br>
 
@@ -25,6 +25,6 @@
         <button type="submit">Add or Update Movie</button><br>
     </form>
 
-    <a href="{{ url_for('index') }}">Back to Movies List</a>
+    <a href="{{ url_for('main.index') }}">Back to Movies List</a>
 </body>
 </html>
