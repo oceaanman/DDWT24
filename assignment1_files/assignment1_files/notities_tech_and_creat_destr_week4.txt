@@ -1,0 +1,115 @@
+notities_tech_and_creat_destr_week4.txt
+
+week's premise:
+we can best understand technologies by understanding the particular economic system they eerge and develop with
+
+WHAT IS A PLATFORM
+	an architecture from which to speak or act
+		(train platform, political stage, soap box)
+	computation meaning:
+		a programmable infrastructure upon which other software where can be built an run
+
+	'at the most general level, platforms are digital infrastructures that enable two or more groups to interact.
+	they... position themselves as intermediaries that bring together different users: customers, advertisers, service providers, producers, suppliers and even physical objects.
+	more often than not, these platforms also come with a series of tools that enable theirs users to build their own products, services and marketplaces' - srnicek
+	(or, in other words, they are intermediaries that also control and govern the rules of the game)
+
+	'The world's largest taxi firm, Uber, owns no cars. The world's most popular media company, Facebook, creates no content. 
+	The world's most valualbe retailer, Alibaba, carries no stock. And the world's largest accommodation provider, Airbnb, owns no property' - Goodwin, 2015
+
+	Hard to regulate things like data, such as user data and cookies. User data is just tracked behaviour. 
+	Data - oil comparison: data is treated like a raw resource, as oil, but it isn't. Data is infinite, while oil is finite
+
+WHAT IS PLATFORM CAPITALISM
+	a new business model that has emerged which is infiltrating the rest of the economy
+	focused on the extraction and control of immense amounts of data
+
+	platforms, as a firm, are characterized by:
+	1-cross-subsidisation
+	2-network effects
+	3-monopolization
+
+	1 example: google and youtube. youtube is not profitable, but google decided to buy it and keep it. it generates data and eventually other parts of google become more profitable
+		google uses youtube's data to enrich other data sets, which then become more valuable and makes youtube indirectly valuable
+
+	2 by having a umbrella platform (meta owning facebook, instagram, whatsapp) a user is more likely to join another app, if they already have one.
+		antoher example: if a chrome browser already has google as its default search engine, a user is more likely to use google
+
+	3 clear
+
+	'platforms have become efficient ways to monopolise, extract, analyse, and use increasingly large amounts of recorded data' - srnicek
+	what is data? information that something happened. not information about a user, but about a user's behaviour
+
+	5 different types of platforms by srnicek
+		- advertising: 	google, facebook
+			sells user behaviour information, sell the probability of users clicking on e.g. advertising
+		- cloud: 	amazon web services, google cloud platform
+		- industrial:	general electric, siemens ("cloud-based computing for factories")
+				different from cloud, as they delve into other markets.
+		- product:	swapfiets, spotify, roll royce
+		- lean:		uber, airbnb
+			don't have products, but bring together users and things
+
+		categorised by the way they make money
+
+HOW DID WE GET HERE
+	three moments that set the stage for platform capitalism:
+	1 early 1970's: overcapacity and crisis of profitability in manufacturing
+		overabundance of manufacturing
+	2 late 1990's: dotcom boom and bust - the bubble that laid the groundwork for the digital economy to come - srnicek
+		venture capitalists investing in the internet, as the new big thing
+		at that time, no way to make its money back
+	3 2008: financial crisis
+
+	platform capitalism does not produce many jobs, 
+		and most of the jobs it does produce are not 'good jobs'
+	unsustainable business models 
+		(reliant on surplus venture capital or advertising)
+	business model requires more and more data
+		(surveillance capitalism)
+
+	how about non users? representing non users. it is hard to travel without ov-chip, but possible (tiring).
+
+WHAT IS THE PROBLEM
+	are platforms a new infrastructure that might revive economic growth?
+	will platforms reinvigorate capitalist competition or result in new monopolies?
+
+	data colonialism:
+	'... activities are like lands waiting to be discovered. Whoever gets there first and holds them gets their resources - in this case their data riches' - srnicek
+
+	'colonislism might seem like a thing of the past, but this book shows that the historic appropriation of land bodies, and natural resources is mirrored today in this new era of pervasive datafication. Apps, platforms, and smart ojbects capture and translate our lives into data and then extract information that is fed into capitalist enterprises and sold back to us.' - on the book of nick couldry and mejias - the costs of connection
+
+	two strategies for plattform capitalists
+	- extract more data (claim more territory)
+		acquire more data (google acquiring different kinds of companies - e.g. acquiring new platforms or enter new markets. also meta acquiring oculus)
+	- defending your data
+		'amazon... aims to be a closed platform, seperated from google. rather than turning to an internet search engine for buying goods online
+		users would search for goods, compare, purchase, track and review all without leaving the amazon platform'
+		'if people move into apps or start searching on amazon instead of google, these are threats to google's data'
+		not allowing users to leave your platform, or making it hard, so they can harvest more data
+		only selling access to analytics, instead of selling the data
+
+WHERE ARE WE GOING
+	should we ban the collection of personal data?
+
+WHAT SHOULD WE DO ABOUT THIS
+	'calls for privacy miss how the suppression of privacy is at the heart of this business model'
+	should we support alternative platforms?
+
+	why is it hard to compete with a platform like facebook?
+	1 access to data
+	2 network effects
+		also if friends use whatsapp, you are more likely to use whatsapp
+	3 path dependency
+		if you use windows, you will be more likely to use other services by microsoft. 
+
+	platform cooperativism
+	a platform cooperative is a cooperatively-owned, democracically-governed platform
+	platform coops are owned and governed by those who depend on them most- workers, users, and other relevant groups
+
+	local coop example: instead of uber, city of austin made their own rideshare app
+
+	nationalising platforms? - srnicek
+
+Seminar debate Statement:
+‘Increased access to personal data should be permitted as it leads to greater innovation in the economy'

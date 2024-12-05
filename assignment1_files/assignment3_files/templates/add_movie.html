@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add or update Movie</title>
+
+</head>
+<body>
+    <h1>Add or update a Movie</h1>
+
+    <form action="{{ url_for('main.add_movie') }}" method="POST">
+        <label for="id">Movie ID (Enter a movie ID to change that movie or leave empty to add a new movie):</label><br>
+        <input type="number" id="id" name="id" value="{{ movie.id if movie else '' }}"><br><br>
+
+        <label for="name">Movie Name:</label><br>
+        <input type="text" id="name" name="name" value="{{ movie.name if movie else '' }}" required><br><br>
+    
+        <label for="year">Year:</label><br>
+        <input type="number" id="year" name="year" value="{{ movie.year if movie else '' }}"><br><br>
+    
+        <label for="oscars">Oscars:</label><br>
+        <input type="number" id="oscars" name="oscars" value="{{ movie.oscars if movie else '' }}"><br><br>
+    
+        <button type="submit">Add or Update Movie</button><br>
+    </form>
+
+    <a href="{{ url_for('main.index') }}">Back to Movies List</a>
+</body>
+</html>
